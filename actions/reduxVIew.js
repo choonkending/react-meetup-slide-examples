@@ -1,3 +1,4 @@
+import { createTopic, typing } from 'actions/topics';
 // Assume container level component
 // Also assume all dependencies are imported
 class EntryBox extends React.Component {
