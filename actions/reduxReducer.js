@@ -4,9 +4,9 @@ import {
   DESTROY_TOPIC,
   INCREMENT_COUNT,
   DECREMENT_COUNT } from 'constants/actionTypes';
-import { createStore } from 'redux';
 
-function topic(state = {}, action) {
+
+export function topic(state = {}, action) {
   switch (action.type) {
     case TYPING:
       return Object.assign({}, state,
@@ -21,7 +21,3 @@ function topic(state = {}, action) {
       return state;
   }
 }
-
-let store = createStore(todoApp);
-// Do stuff with store
-
