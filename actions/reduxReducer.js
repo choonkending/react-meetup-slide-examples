@@ -1,10 +1,4 @@
-import {
-  TYPING,
-  CREATE_TOPIC,
-  DESTROY_TOPIC,
-  INCREMENT_COUNT,
-  DECREMENT_COUNT } from 'constants/actionTypes';
-
+import { TYPING, CREATE_TOPIC} from 'constants/actionTypes';
 
 export function topic(state = {}, action) {
   switch (action.type) {
